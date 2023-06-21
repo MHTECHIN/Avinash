@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-image: url(marron.jpg) ;
+  }
+  .title-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* Adjust the height as needed */
+    background-color: #f2f2f2; /* Example background color */
+  }
+  
+  .title-bar img {
+    max-width: 400%;
+    max-height: 210%;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(232, 237, 126);
+  }
+  
+  .header-container header:nth-child(2) {
+    margin-left: auto;
+    
+  }
+  
+  
+  /* Header Styles */
+  header {
+    
+    color: #fbf8f8;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  
+  header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  /* Main Styles */
+  main {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    
+  }
+  
+  /* Products Section Styles */
+  /* Styles for products section */
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(255, 253, 253);
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.product-card {
+  flex: 1 0 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.Regular.Chandi {
+  padding: 10px;
+}
+.Regular.Chandi h2 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.Regular.Sona {
+ /* background-color: #fff;  set background color */
+  padding: 20px; /* add padding */
+ /*  border: 2px solid #ffd700; add border */
+}
+
+.Regular.Sona h2 {
+  font-size: 24px; /* set font size */
+  color: #fffffe;/*   set font color */
+  margin: 0; /* remove margin */
+  text-align: center; /* center text */
+}
+
+
+/* Styles for columns */
+.column-1 {
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.column-2 {
+  flex-basis: calc(100% / 3- 20px);
+}
+
+.column-3 {
+  flex-basis: calc(33.33% - 20px);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .product-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-card {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+  /* About Us Section Styles */
+  .about-us {
+    margin-bottom: 40px;
+    background-color: bisque;
+  }
+  
+  /* Contact Us Section Styles */
+  .contact-us {
+    margin-bottom: 40px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
