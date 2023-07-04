@@ -1,0 +1,275 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #DADBDD;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.product {
+  flex-basis: calc(25% - 20px);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.product-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #b12704;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0c14b;
+  color: #111111;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #d89f1d;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .product-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    flex-basis: calc(100% - 20px);
+  }
+}
+p {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+footer {
+  position: sticky;
+  margin: auto;
+  background-image: linear-gradient(to right, rgb(239, 98, 47), gold);
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 3px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 15px;
+}
+.col .info {
+  line-height: 20px;
+  text-align: justify;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+form .fa-regular {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid {
+  font-size: 16px;
+  color: black;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #000;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #72720a;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
